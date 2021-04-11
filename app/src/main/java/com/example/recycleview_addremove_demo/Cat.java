@@ -1,6 +1,8 @@
 package com.example.recycleview_addremove_demo;
 
-public class Cat {
+import java.io.Serializable;
+
+public class Cat implements Serializable {
     private int img;
     private String name;
     private String cost;

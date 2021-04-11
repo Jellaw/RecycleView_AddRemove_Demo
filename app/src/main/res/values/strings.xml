@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">RecycleView_AddRemove_Demo</string>
+    <array name="action">
+        <item>+</item>
+        <item>-</item>
+        <item>*</item>
+        <item>:</item>
+    </array>
 </resources>

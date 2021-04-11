@@ -6,82 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="#B2B2E4B4"
-        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:text="Nhap ten con meo"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-
-        <EditText
-            android:id="@+id/edtName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:ems="10"
-            android:inputType="textPersonName" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:text="Nhap gia con meo"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-
-        <EditText
-            android:id="@+id/edtCost"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:ems="10"
-            android:inputType="number|text" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Loai meo"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:layout_margin="3dp" />
-
-        <Spinner
-            android:id="@+id/spinner2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp" />
-
-        <Button
-            android:id="@+id/button"
+        <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="ADD" />
-    </LinearLayout>
+            android:text="Monday" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/catRec"
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/itemSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuesday" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tinh toan" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPage"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="3dp"
-        android:background="#993F51B5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
